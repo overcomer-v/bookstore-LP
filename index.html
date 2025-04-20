@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/icons/css/all.css">
+    <title>Document</title>
+</head>
+
+<body class="flex-column default-gap">
+
+    <nav id="nav-menu">
+        <div class="flex default-gap"><i id="nav-home" class="fa fa-home "></i>
+            <p class="title-style">Bookie</p>
+        </div>
+        <p>Recommendations</p>
+        <p>Categories</p>
+        <p>Popular</p>
+        <p>Explore</p>
+    </nav>
+
+    <header>
+        <div class="flex default-gap"><i id="nav-icon" class="fa fa-bars "></i>
+            <p class="title-style">Bookie</p>
+        </div>
+        <div class="flex optons-container">
+            <p>Recommendations</p>
+            <p>Categories</p>
+            <p>Popular</p>
+            <p>Explore</p>
+        </div>
+        <div class="flex default-gap">
+            <p>Sign Up</p>
+            <p class="curved-bt">login</p>
+        </div>
+    </header>
+    <main class="flex">
+
+        <div id="left-section" class="margin-auto flex-column" style="gap: 10px;">
+            <h1>Unlock New Worlds, One Page At A Time</h1>
+            <p id="main-message">A cozy haven filled with shelf of endless stories,
+                where the scent paper and ink lingers in the air.
+                Every corner holds a new adventure,
+                from timeless classics to modern tales.
+                A place where imaginations soarand curiosity finds its home. </p>
+            <div class="flex default-gap">
+                <button class="curved-bt flex default-gap" style="padding: 15px 20px;">
+                    <p style="display: inline; margin: 0;">Go to Store</p>
+                    <i class="fa fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+
+
+        <div id="right-section">
+            <img id="main-image" src="/media-files/—Pngtree—colorful 2d book icon with_20033797.PNG" alt="">
+        </div>
+
+    </main>
+    <footer>
+        <div>
+            <div class="icon-container">
+                <i class="fa fa-book  span-icon"></i>
+            </div>
+
+            <div>
+                <h6>READ BOOKES ONLINE</h6>
+                <p>OVER MILLIONS OF BOOKS</p>
+            </div>
+        </div>
+        <div>
+            <div class="icon-container">
+                <i class="fa fa-ship  span-icon"></i>
+            </div>
+            <div>
+                <h6>FREE SHIPPING</h6>
+                <p>ALL ACROSS THE WORLD</p>
+            </div>
+        </div>
+        <div>
+            <div class="icon-container">
+                <i class="fa fa-refresh  span-icon"></i>
+            </div>
+            <div>
+                <h6>30 DAYS RETURN POLICY</h6>
+                <p>SIMPLE RETURN POLICY</p>
+            </div>
+        </div>
+        <div>
+            <div class="icon-container">
+                <i class="fa fa-book  span-icon"></i>
+            </div>
+            <div>
+                <h6>FREE SHIPPING</h6>
+                <p>ALL ACROSS THE WORLD</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const navIcon = document.getElementById("nav-icon");
+        const navMenu = document.getElementById("nav-menu");
+
+
+        navIcon.addEventListener("click", (event)=>{
+            navMenu.classList.toggle("active");
+            event.stopPropagation();
+        });
+
+        document.addEventListener("click",(event)=>{
+        if(!navMenu.contains(event.target)&& !navIcon.contains(event.target)){
+            navMenu.classList.remove("active");
+        }
+
+        });
+    </script>
+</body>
+
+</html>
